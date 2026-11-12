@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#071a19" />
+    <meta name="description" content="林间微光 1.1——在落叶、山泉和追逐中穿过一座会呼吸的森林。" />
+    <title>林间微光 1.1</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="game-shell" aria-label="林间微光游戏">
+      <canvas id="game" aria-label="森林横向探索游戏画面"></canvas>
+
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>林间微光 <small class="version-badge">v1.1</small></span>
+        </div>
+        <div class="actions">
+          <button id="sound-btn" class="icon-btn" type="button" aria-label="开启或关闭声音">声音：开</button>
+          <button id="restart-btn" class="icon-btn" type="button">重新开始</button>
+        </div>
+      </header>
+
+      <section id="start-panel" class="start-panel" aria-labelledby="game-title">
+        <p class="eyebrow">A luminous chase through the woods · v1.1</p>
+        <h1 id="game-title">林间微光</h1>
+        <p class="intro">戴上紫色尖帽，越过滚木、地刺与落叶陷阱，在小猴子追上你之前抵达森林尽头。</p>
+        <button id="start-btn" class="primary-btn" type="button">开始奔跑</button>
+        <p class="hint">电脑：← → / A D 移动，空格跳跃<br />手机：使用屏幕下方按钮</p>
+      </section>
+
+      <div id="message" class="message" aria-live="polite"></div>
+
+      <section id="ending" class="ending" aria-live="polite" hidden>
+        <p>你甩开了身后的脚步</p>
+        <h2>山泉与微光，记住了这顶紫色尖帽。</h2>
+        <button id="again-btn" class="primary-btn" type="button">再走一次</button>
+      </section>
+
+      <div class="progress" aria-hidden="true">
+        <span id="progress-fill"></span>
+      </div>
+
+      <div class="mobile-controls" aria-label="触屏控制">
+        <button id="left-btn" type="button" aria-label="向左移动">←</button>
+        <button id="right-btn" type="button" aria-label="向右移动">→</button>
+        <button id="jump-btn" class="jump" type="button" aria-label="跳跃">↑</button>
+      </div>
+    </main>
+    <script src="./game.js"></script>
+  </body>
+</html>
