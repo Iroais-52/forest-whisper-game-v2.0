@@ -2,7 +2,7 @@
 大幅提升难度，非休闲版本
 # 林间微光 v1.1
 
-[▶ 点击开始游戏](https://iroais-52.github.io/forest-whisper-game/?version=1.1)
+[▶ 点击开始游戏](https://iroais-52.github.io/forest-whisper-game-v2.0/forest-whisper-v1.1/)
 
 进入后点击“开始奔跑”。
 
